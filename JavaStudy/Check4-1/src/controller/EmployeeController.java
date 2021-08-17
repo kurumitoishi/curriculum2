@@ -1,9 +1,5 @@
 package controller;
 
-/**
- * 社員情報管理コントローラー
- */
-
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -17,6 +13,7 @@ import bean.EmployeeBean;
 import service.EmployeeService;
 
 public class EmployeeController extends HttpServlet {
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

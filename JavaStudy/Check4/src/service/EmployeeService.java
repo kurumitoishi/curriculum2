@@ -1,3 +1,4 @@
+
 package service;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -88,9 +89,9 @@ public class EmployeeService {
 
 	  // 問⑧ EmployeeBeanに取得したデータを入れてください。
 	 employeeDate = new EmployeeBean();
-	 employeeDate.setName("name");
-	 employeeDate.setComment("comment");
-	 employeeDate.setLogin_Time("login_time");
+	 employeeDate.setName(tmpName);
+	 employeeDate.setComment(tmpComment);
+	 employeeDate.setLogin_Time(tmpLoginTime);
 	 }
 
 	  // forName()で例外発生
