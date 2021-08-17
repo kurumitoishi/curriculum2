@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import bean.EmployeeBean;
+import service.EmployeeService;
+
 public class EmployeeController extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			 throws ServletException, IOException {
@@ -27,11 +30,12 @@ public class EmployeeController extends HttpServlet {
 			 */
 
 			  // 問② EmployeeServiceクラスをインスタンス化する。
+			 EmployeeService es = new EmployeeService();
 
 			  // 問③ EmployeeBeanに、EmployeeServiceよりsearch関数を呼び出し、返り値を格納する。
-
+			 EmployeeBean c= es.search(id,password);
 			  // 問④ nullの部分に適切な引数をセットする。
-			 request.setAttribute("EmployeeBean", null);
+			 request.setAttribute("EmployeeBean", c);
 
 			 } catch (Exception e) {
 			 e.printStackTrace();
@@ -42,4 +46,4 @@ public class EmployeeController extends HttpServlet {
 			 }
 			 }
 			}
-}
+

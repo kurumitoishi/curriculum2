@@ -1,0 +1,45 @@
+@media screen and (max-width: 479px) {
+    .wrapper {
+        width: 200px;
+    }
+    .header {
+        height: 200px;
+    }
+    .parts1 {
+        bottom: 120px;
+        right: 70px;
+    }
+    .parts2 {
+        bottom: 70px;
+        right: 70px;
+    }
+    .parts3 {
+        bottom: 20px;
+        right: 70px;
+    }
+    .left {
+        float: none;
+        width: 200px;
+        height: 100px;
+    }
+    .right {
+        float: none;
+        width: 200px;
+        height: 200px;
+    }
+    .parts4 {
+        width: 130px;
+        bottom: 130px;
+        left: 30px;
+    }
+    .parts5 {
+        width: 130px;
+        bottom: 75px;
+        left: 30px;
+    }
+    .parts6 {
+        width: 130px;
+        bottom: 20px;
+        left: 30px;
+    }
+}

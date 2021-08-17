@@ -4,13 +4,13 @@
 
 <%
  // 問① getAttributeに適切な引数をセットして、EmployeeControllerから渡されたBeanを取得する。
- EmployeeBean employeeBean = (EmployeeBean) request.getAttribute("ここを改修");
+ EmployeeBean employeeBean = (EmployeeBean) request.getAttribute("EmployeeBean");
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>検索結果</title>
 </head>
 <body>
@@ -36,7 +36,7 @@
 
  <!-- 問② それ以外の表示（エラーの場合）-->
  <% } else { %>
- 【ここを修正】
+ <h1>IDもしくはパスワードが間違っています</h1>
  <% } %>
  </div>
 </body>
